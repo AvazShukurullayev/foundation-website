@@ -51,6 +51,12 @@ header {
     padding: 1.2rem;
 }
 
+.navbar-nav i {
+    color: #fff;
+    font-size: 1.3rem;
+    display: none;
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -368,3 +374,22 @@ footer {
 }
 
 /*footer section styling finished */
+
+/* media query */
+@media only screen and (max-width: 800px) {
+    .navbar-nav i {
+        display: block;
+    }
+
+    .navbar-nav a {
+        display: none;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .design-content, .blog-content, .about-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
